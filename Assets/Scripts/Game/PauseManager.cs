@@ -17,7 +17,7 @@ public class PauseManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             this.canvas.enabled = !this.canvas.enabled;
             //Pause();
-            Quit();
+            //Quit();
         }
     }
 
