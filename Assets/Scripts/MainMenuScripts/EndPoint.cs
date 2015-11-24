@@ -2,13 +2,10 @@
 using System.Collections;
 
 public class EndPoint : MonoBehaviour {
-
-
 	public int sceneToStart = 0;				//Index number in build settings of scene to load if changeScenes is true
 
-
-
-	void OnTriggerEnter (Collider other)
+	// TODO fix
+	/*void OnTriggerEnter (Collider other)
 	{
 		// If the colliding gameobject is the player...
 		if(other.gameObject == player)
@@ -29,9 +26,5 @@ public class EndPoint : MonoBehaviour {
 		
 		//Load the selected scene, by scene index number in build settings
 		Application.LoadLevel (sceneToStart);
-	}
-
+	}*/
 }
-
-
-
