@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Key
   - New Tag
+  - Fire
+  - Fader
+  - Alarm
+  - AlarmLight
+  - MainLight
   layers:
   - Default
   - TransparentFX
