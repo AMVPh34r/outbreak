@@ -10,6 +10,7 @@ public class PlayerMovementController : MonoBehaviour {
     private Rigidbody playerRigidbody;  // Reference to the player's rigidbody.
     private int floorMask;              // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     private float camRayLength = 100f;  // The length of the ray from the camera into the scene.
+	public static int keyCount;
 
     void Awake()  {
         // Create a layer mask for the floor layer.
@@ -76,4 +77,17 @@ public class PlayerMovementController : MonoBehaviour {
         // Tell the animator whether or not the player is walking.
         //this.anim.SetBool("IsWalking", walking);
     }
+
+	void OnTriggerEnter (Collider collider)
+	{
+		if (collider.gameObject.name == "Key")
+		{
+			
+			PlayerMovementController.keyCount += 1;
+			
+			collider.gameObject.SetActive (false);
+
+		}
+		
+	}
 }
