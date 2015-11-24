@@ -3431,7 +3431,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153232, guid: b505a2cbead44014fb9d947ece25e488, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b505a2cbead44014fb9d947ece25e488, type: 2}
@@ -4759,7 +4759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a453e4d4ac3594e93655c1cf9a5d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 5
+  camRayLength: 100
 --- !u!54 &1889582889
 Rigidbody:
   m_ObjectHideFlags: 0
