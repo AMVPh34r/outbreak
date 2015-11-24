@@ -53,6 +53,7 @@ public class EnemySight : MonoBehaviour
 		else
 			// ... set the animator parameter to false.
 			anim.SetBool(hash.playerInSightBool, false);
+
 	}
 	
 
