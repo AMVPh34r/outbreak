@@ -209,7 +209,7 @@ Transform:
   - {fileID: 1013179766}
   - {fileID: 1182818539}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &69203323 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100184, guid: ffa9171c63be740c6bbfed6ee82fa569, type: 3}
@@ -4504,7 +4504,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_BackGroundColor: {r: .448096901, g: .55943203, b: .823529422, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
