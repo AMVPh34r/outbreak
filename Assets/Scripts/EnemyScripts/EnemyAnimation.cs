@@ -59,12 +59,13 @@ public class EnemyAnimation : MonoBehaviour
 		// Create the parameters to pass to the helper function.
 		float speed;
 		float angle;
-		
+
 		// If the player is in sight...
 		if(enemySight.playerInSight)
 		{
 			// ... the enemy should stop...
 			speed = 0f;
+			anim.SetBool (hash.enemyIsMovingBool, false);
 			
 			// ... and the angle to turn through is towards the player.
 			angle = FindAngle(transform.forward, player.position - transform.position, transform.up);
@@ -73,6 +74,7 @@ public class EnemyAnimation : MonoBehaviour
 		{
 			// Otherwise the speed is a projection of desired velocity on to the forward vector...
 			speed = Vector3.Project(nav.desiredVelocity, transform.forward).magnitude;
+			anim.SetBool (hash.enemyIsMovingBool, true);
 			
 			// ... and the angle is the angle between forward and the desired velocity.
 			angle = FindAngle(transform.forward, nav.desiredVelocity, transform.up);

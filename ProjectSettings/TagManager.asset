@@ -11,6 +11,7 @@ TagManager:
   - Alarm
   - AlarmLight
   - MainLight
+  - Enemy
   layers:
   - Default
   - TransparentFX
