@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemySight : MonoBehaviour
 {
-	public float fieldOfViewAngle = 110f;				// Number of degrees, centred on forward, for the enemy see.
+	public float fieldOfViewAngle = 90f;				// Number of degrees, centred on forward, for the enemy see.
     public bool playerInSight;							// Whether or not the player is currently sighted.
 	public Vector3 personalLastSighting;				// Last place this enemy spotted the player.
 
@@ -93,14 +93,14 @@ public class EnemySight : MonoBehaviour
 			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).nameHash;
 			int playerLayerOneStateHash = playerAnim.GetCurrentAnimatorStateInfo(1).nameHash;
 			
-			// If the player is running or is attracting attention...
+			/*// If the player is running or is attracting attention...
 			if(playerLayerZeroStateHash == hash.locomotionState || playerLayerOneStateHash == hash.shoutState)
 			{
 				// ... and if the player is within hearing range...
 				if(CalculatePathLength(player.transform.position) <= col.radius)
 					// ... set the last personal sighting of the player to the player's current position.
 					personalLastSighting = player.transform.position;
-			}
+			}*/
         }
     }
 	
