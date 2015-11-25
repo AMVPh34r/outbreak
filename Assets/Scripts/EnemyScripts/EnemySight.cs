@@ -26,7 +26,7 @@ public class EnemySight : MonoBehaviour
 		anim = GetComponent<Animator>();
 		lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
 		player = GameObject.FindGameObjectWithTag(Tags.player);
-		playerAnim = player.GetComponent<Animator>();
+		//playerAnim = player.GetComponent<Animator>();
 		playerHealth = player.GetComponent<PlayerHealth>();
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 		
@@ -88,19 +88,21 @@ public class EnemySight : MonoBehaviour
 					}
 				}
 			}
-			
+
+			/*
 			// Store the name hashes of the current states.
-			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).nameHash;
-			int playerLayerOneStateHash = playerAnim.GetCurrentAnimatorStateInfo(1).nameHash;
+			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
+			int playerLayerOneStateHash = playerAnim.GetCurrentAnimatorStateInfo(1).fullPathHash;
 			
-			/*// If the player is running or is attracting attention...
+			// If the player is running or is attracting attention...
 			if(playerLayerZeroStateHash == hash.locomotionState || playerLayerOneStateHash == hash.shoutState)
 			{
 				// ... and if the player is within hearing range...
 				if(CalculatePathLength(player.transform.position) <= col.radius)
 					// ... set the last personal sighting of the player to the player's current position.
 					personalLastSighting = player.transform.position;
-			}*/
+			}
+			 */
         }
     }
 	

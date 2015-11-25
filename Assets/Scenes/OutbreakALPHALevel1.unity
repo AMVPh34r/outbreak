@@ -800,7 +800,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452360, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 139666, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
+      propertyPath: m_Name
+      value: Waypoint (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
@@ -1018,11 +1022,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452360, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 139666, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_Name
-      value: Waypoint (2)
+      value: Waypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
@@ -1779,10 +1783,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1875797761}
-  - {fileID: 1162725863}
   - {fileID: 1602136859}
   - {fileID: 1915230637}
+  - {fileID: 1875797761}
+  - {fileID: 1162725863}
   - {fileID: 1407894921}
   - {fileID: 298249607}
   - {fileID: 172455795}
@@ -2136,7 +2140,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4004,11 +4010,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452360, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 139666, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_Name
-      value: Waypoint (1)
+      value: Waypoint (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
@@ -4293,7 +4299,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -4947,11 +4955,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452360, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 139666, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
       propertyPath: m_Name
-      value: Waypoint (3)
+      value: Waypoint (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89ded46b95d4e964a9b40a04c22b3c8b, type: 2}
@@ -5102,7 +5110,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -6607,7 +6617,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447306, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.5599995
+      value: 16.3099995
       objectReference: {fileID: 0}
     - target: {fileID: 447306, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6615,7 +6625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447306, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -15.8599997
+      value: -17.1499996
       objectReference: {fileID: 0}
     - target: {fileID: 447306, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6640,19 +6650,19 @@ Prefab:
     - target: {fileID: 11412062, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: patrolWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1875797761}
+      objectReference: {fileID: 1602136859}
     - target: {fileID: 11412062, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: patrolWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1162725863}
+      objectReference: {fileID: 1915230637}
     - target: {fileID: 11412062, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: patrolWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1602136859}
+      objectReference: {fileID: 1875797761}
     - target: {fileID: 11412062, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
       propertyPath: patrolWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1915230637}
+      objectReference: {fileID: 1162725863}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f6ca579e79f5ef42b8f8a006f03c195, type: 2}
   m_IsPrefabParent: 0
