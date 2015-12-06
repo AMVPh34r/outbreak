@@ -1,15 +1,22 @@
 fileFormatVersion: 2
 guid: eac1dae06863b43f0a111ade42d5de8c
-timeCreated: 1448787927
+timeCreated: 1449350984
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SpecimenRackOhneTank
+    100000: SpecimenRackOhneTank
+    100002: SpecimenRackOhneTank.001
+    100004: //RootNode
+    400000: SpecimenRackOhneTank
+    400002: SpecimenRackOhneTank.001
+    400004: //RootNode
+    2300000: SpecimenRackOhneTank
+    2300002: SpecimenRackOhneTank.001
+    3300000: SpecimenRackOhneTank
+    3300002: SpecimenRackOhneTank.001
+    4300000: SpecimenRackOhneTank.001
+    4300002: SpecimenRackOhneTank
   materials:
     importMaterials: 1
     materialName: 0
