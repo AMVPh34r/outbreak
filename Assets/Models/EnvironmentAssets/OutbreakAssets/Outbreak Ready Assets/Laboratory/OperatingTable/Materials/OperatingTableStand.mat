@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Node2Base
+  m_Name: OperatingTableStand
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -102,7 +102,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: 1
       data:
         first:
           name: _BumpScale
@@ -126,7 +126,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
+        second: 1
     m_Colors:
       data:
         first:
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .0232281927, g: .0324500315, b: .0469625033, a: 1}
+        second: {r: .390354663, g: .448984027, b: .558823526, a: 1}

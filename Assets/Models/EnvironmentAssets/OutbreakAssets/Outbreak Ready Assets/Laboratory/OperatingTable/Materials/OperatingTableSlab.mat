@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Node2Base
+  m_Name: OperatingTableSlab
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .0232281927, g: .0324500315, b: .0469625033, a: 1}
+        second: {r: .301470578, g: .301470578, b: .301470578, a: 1}
