@@ -8,7 +8,8 @@ public class LastPlayerSighting : MonoBehaviour
 	public float lightHighIntensity = 0.25f;							// The directional light's intensity when the alarms are off.
 	public float lightLowIntensity = 0f;								// The directional light's intensity when the alarms are on.
 	public float fadeSpeed = 7f;										// How fast the light fades between low and high intensity.
-	public float musicFadeSpeed = 1f;									// The speed at which the 
+	public float musicFadeSpeed = 1f;									// The speed at which the panic music fades in
+	public float panicAudioVolume = 0.8f;								// The maximum volume for panic music to play
 
 	private AlarmLight alarm;											// Reference to the AlarmLight script.
 	private Light mainLight;											// Reference to the main light.
@@ -98,7 +99,7 @@ public class LastPlayerSighting : MonoBehaviour
 			GetComponent<AudioSource>().volume = Mathf.Lerp(GetComponent<AudioSource>().volume, 0f, musicFadeSpeed * Time.deltaTime);
 			
 			// ... and fade in the panic music.
-			panicAudio.volume = Mathf.Lerp(panicAudio.volume, 0.8f, musicFadeSpeed * Time.deltaTime);
+			panicAudio.volume = Mathf.Lerp(panicAudio.volume, panicAudioVolume, musicFadeSpeed * Time.deltaTime);
 		}
 		else
 		{
