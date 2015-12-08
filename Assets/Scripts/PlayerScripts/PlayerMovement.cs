@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 	
 	void Update ()
 	{
-
+		AudioManagement ();
 	}
 	
 	
@@ -68,6 +68,19 @@ public class PlayerMovement : MonoBehaviour
 		
 		// Change the players rotation to this new rotation.
 		GetComponent<Rigidbody>().MoveRotation(newRotation);
+	}
+
+	void AudioManagement()
+	{
+		// If the player is currently moving and footstep audio is not playing, play it
+		if(anim.GetCurrentAnimatorStateInfo(0).fullPathHash == hash.locomotionState)
+		{
+			if(!GetComponent<AudioSource>().isPlaying)
+				GetComponent<AudioSource>().Play();
+		}
+		else
+			// Otherwise stop footstep audio
+			GetComponent<AudioSource>().Stop();
 	}
 
 	void OnTriggerEnter (Collider collider)
