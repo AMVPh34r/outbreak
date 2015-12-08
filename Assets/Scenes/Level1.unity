@@ -8463,7 +8463,7 @@ Prefab:
     - target: {fileID: 8200000, guid: 6cfcff4f1e154ba4b9a725e2ba7a88f9, type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: a10697c36fc6ed54b933c6f74ea24577, type: 3}
+      objectReference: {fileID: 8300000, guid: 4154e266fc373484c8800d843137d27f, type: 3}
     - target: {fileID: 8200000, guid: 6cfcff4f1e154ba4b9a725e2ba7a88f9, type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
@@ -8472,6 +8472,10 @@ Prefab:
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: 6cfcff4f1e154ba4b9a725e2ba7a88f9, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 55d32ed4173003f40ac9ed9ce97b0a83, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cfcff4f1e154ba4b9a725e2ba7a88f9, type: 2}
   m_IsPrefabParent: 0
