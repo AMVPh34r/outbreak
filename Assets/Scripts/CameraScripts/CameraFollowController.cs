@@ -23,7 +23,6 @@ public class CameraFollowController : MonoBehaviour {
 
 		// Zoom camera when scroll wheel is spun
 		fov = Camera.main.fieldOfView;
-		Debug.Log (Input.GetAxis ("Mouse ScrollWheel"));
 		fov += Input.GetAxis("Mouse ScrollWheel") * sensitivity;
 		fov = Mathf.Clamp(fov, minFov, maxFov);
 		Camera.main.fieldOfView = fov;
