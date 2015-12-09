@@ -34,11 +34,12 @@ public class TextBoxManager : MonoBehaviour {
 
 	void Update()
 	{
+		if (textBox.activeSelf) {
+			theText.text = textLines [currentLine];
 
-		theText.text = textLines[currentLine];
-
-		if (Input.GetKeyDown (KeyCode.Return)) {
-			currentLine += 1;
+			if (Input.GetKeyDown (KeyCode.Return)) {
+				currentLine += 1;
+			}
 		}
 
 		if (currentLine > endAtLine) {
