@@ -19,8 +19,8 @@ public class TextBoxManager : MonoBehaviour {
 		if (textFile != null) {
 			textBox.SetActive (true);
 			textLines = textFile.text.Split ('\n');
-			textTitle = GameObject.Find ("Canvas/Panel/Title").gameObject.GetComponent<Text>();
-			theText = GameObject.Find ("Canvas/Panel/Text").gameObject.GetComponent<Text>();
+			textTitle = GameObject.Find ("Canvas/Fitter/Panel/Title").gameObject.GetComponent<Text>();
+			theText = GameObject.Find ("Canvas/Fitter/Panel/Text").gameObject.GetComponent<Text>();
 		} else {
 			textBox.SetActive (false);
 		}
