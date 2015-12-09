@@ -2,15 +2,16 @@
 using System.Collections;
 using UnityEngine.UI;
 public class TextBoxManager : MonoBehaviour {
-
-	public GameObject textBox;
 	public TextAsset textFile;
-	public string[] textLines;
-	public Text textTitle;
-	public Text theText;
-	public int currentLine;
-	public int endAtLine;
-	public PlayerMovement player;
+	public GameObject textBox;
+	public bool disableControls = true;	// Whether or not to disable player controls while textbox is showing
+
+	private string[] textLines;
+	private Text textTitle;
+	private Text theText;
+	private int currentLine;
+	private int endAtLine;
+	private PlayerMovement player;
 	
 	
 	void Start() {
