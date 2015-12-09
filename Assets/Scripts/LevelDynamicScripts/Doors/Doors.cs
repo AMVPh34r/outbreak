@@ -19,7 +19,7 @@ public class Doors : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 		
-		if (col.gameObject.tag == "Player" && PlayerMovement.keyCount ==1) {
+		if (col.gameObject.tag == "Player" && PlayerMovement.keyCount >=1) {
 			
 			doorOpen = true;
 			DoorsControl("Open");
