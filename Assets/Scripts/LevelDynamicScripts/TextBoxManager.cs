@@ -15,11 +15,15 @@ public class TextBoxManager : MonoBehaviour {
 	
 	void Start() {
 		player = FindObjectOfType<PlayerMovement> ();
-		textTitle = GameObject.Find ("Canvas/Panel/Title").gameObject.GetComponent<Text>();
-		theText = GameObject.Find ("Canvas/Panel/Text").gameObject.GetComponent<Text>();
 
-		if(textFile !=  null)
-			textLines = textFile.text.Split('\n');
+		if (textFile != null) {
+			textBox.SetActive (true);
+			textLines = textFile.text.Split ('\n');
+			textTitle = GameObject.Find ("Canvas/Panel/Title").gameObject.GetComponent<Text>();
+			theText = GameObject.Find ("Canvas/Panel/Text").gameObject.GetComponent<Text>();
+		} else {
+			textBox.SetActive (false);
+		}
 
 		if(endAtLine == 0)
 		{
