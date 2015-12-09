@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void OnTriggerEnter (Collider collider)
 	{
-		if (collider.gameObject.tag == "Key") {
+		if (collider.gameObject.tag == Tags.key) {
 			PlayerMovement.keyCount += 1;
 
 			Debug.Log (keyCount);
