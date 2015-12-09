@@ -9626,6 +9626,26 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .200000018
       objectReference: {fileID: 0}
+    - target: {fileID: 107436, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+      propertyPath: m_Name
+      value: Keycard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
   m_IsPrefabParent: 0
@@ -13107,7 +13127,7 @@ Transform:
   - {fileID: 1257190520}
   - {fileID: 947539374}
   m_Father: {fileID: 1812613463}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!1 &638520807 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d8954d0e946034204b13540cec8895b3, type: 3}
@@ -17237,6 +17257,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 343e89aa8d0c7420dbd6c5a19c46028c, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &839084068 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 107436, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
+  m_PrefabInternal: {fileID: 455164382}
+--- !u!54 &839084069
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839084068}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &839648615
 Prefab:
   m_ObjectHideFlags: 0
@@ -36516,9 +36555,9 @@ Transform:
   - {fileID: 1843667098}
   - {fileID: 441869924}
   - {fileID: 891357903}
-  - {fileID: 632789731}
   - {fileID: 2113907476}
   - {fileID: 83847206}
+  - {fileID: 632789731}
   - {fileID: 1903916418}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -38807,7 +38846,7 @@ Transform:
   - {fileID: 1161761067}
   - {fileID: 455164383}
   m_Father: {fileID: 1812613463}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1001 &1905906926
 Prefab:
   m_ObjectHideFlags: 0

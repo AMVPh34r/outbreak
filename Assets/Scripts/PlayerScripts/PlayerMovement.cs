@@ -85,9 +85,10 @@ public class PlayerMovement : MonoBehaviour
 
 	void OnTriggerEnter (Collider collider)
 	{
-		if (collider.gameObject.name == "Key") {
+		if (collider.gameObject.name == "Keycard") {
 			PlayerMovement.keyCount += 1;
 
+			Debug.Log (keyCount);
 			collider.gameObject.SetActive (false);
 		}
 	}
