@@ -24191,7 +24191,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
       propertyPath: m_Size.y
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6507026, guid: f7fe1422e90ab4561988e8ee72bc34e1, type: 2}
       propertyPath: m_Size.z
