@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
 	public float chaseWaitTime = 5f;						// The amount of time to wait when the last sighting is reached.
 	public float patrolWaitTime = 1f;						// The amount of time to wait when the patrol way point is reached.
 	public Transform[] patrolWayPoints;						// An array of transforms for the patrol route.
-	public bool chaseEnabled = false;							// Whether or not the AI is enabled. Used for debug purposes.
 
 	private EnemySight enemySight;							// Reference to the EnemySight script.
 	private NavMeshAgent nav;								// Reference to the nav mesh agent.
@@ -33,7 +32,7 @@ public class EnemyAI : MonoBehaviour
 	
 	void Update ()
 	{
-		if (chaseEnabled == true) {
+		if (GlobalVars.aiEnabled == true) {
 			// If the player is in sight and is alive...
 			if (enemySight.playerInSight && playerHealth.health > 0f)
 				// ... chase. (TODO shooting for enemies with guns)
@@ -48,8 +47,6 @@ public class EnemyAI : MonoBehaviour
 			else
 				// ... patrol.
 				Patrolling ();
-		} else {
-			Patrolling ();
 		}
 	}
 	

@@ -38,6 +38,9 @@ public class EnemySight : MonoBehaviour
 	
 	void Update ()
 	{
+		if (GlobalVars.aiEnabled == false)
+			return;
+
 		// If the last global sighting of the player has changed...
 		if(lastPlayerSighting.position != previousSighting)
 			// ... then update the personal sighting to be the same as the global sighting.
@@ -59,6 +62,9 @@ public class EnemySight : MonoBehaviour
 
 	void OnTriggerStay (Collider other)
     {
+		if (GlobalVars.aiEnabled == false)
+			return;
+
 		// If the player has entered the trigger sphere...
         if(other.gameObject == player)
         {
