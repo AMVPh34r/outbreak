@@ -55,7 +55,7 @@ public class PlayerHealth : MonoBehaviour
 		anim.SetBool(hash.deadBool, playerDead);
 		
 		// Play the dying sound effect at the player's location.
-		AudioSource.PlayClipAtPoint(deathClip, transform.position);
+		//AudioSource.PlayClipAtPoint(deathClip, transform.position);
 	}
 	
 	

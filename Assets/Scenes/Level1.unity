@@ -10170,15 +10170,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22481682, guid: e0baf7b4a491eea40a879a2956c1a87b, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22481682, guid: e0baf7b4a491eea40a879a2956c1a87b, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22481682, guid: e0baf7b4a491eea40a879a2956c1a87b, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -358.555542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0baf7b4a491eea40a879a2956c1a87b, type: 2}

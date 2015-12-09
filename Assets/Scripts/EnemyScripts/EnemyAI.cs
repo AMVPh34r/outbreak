@@ -71,6 +71,12 @@ public class EnemyAI : MonoBehaviour
 		
 		// Set the appropriate speed for the NavMeshAgent.
 		nav.speed = chaseSpeed;
+
+		// If the player is in sight and the enemy's distance to them very close (touching)...
+		if (enemySight.playerInSight == true && nav.remainingDistance > 0f && nav.remainingDistance < 1f) {
+			// ... kill the player
+			playerHealth.TakeDamage(100f);
+		}
 		
 		// If near the last personal sighting...
 		if (nav.remainingDistance < nav.stoppingDistance) {
