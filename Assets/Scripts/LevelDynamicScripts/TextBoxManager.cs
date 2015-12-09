@@ -4,27 +4,24 @@ using UnityEngine.UI;
 public class TextBoxManager : MonoBehaviour {
 
 	public GameObject textBox;
-
 	public TextAsset textFile;
 	public string[] textLines;
-
+	public Text textTitle;
 	public Text theText;
-	// Use this for initialization
 	public int currentLine;
 	public int endAtLine;
-
 	public PlayerMovement player;
 	
 	
 	void Start() {
 		player = FindObjectOfType<PlayerMovement> ();
+		textTitle = GameObject.Find ("Canvas/Panel/Title").gameObject.GetComponent<Text>();
+		theText = GameObject.Find ("Canvas/Panel/Text").gameObject.GetComponent<Text>();
 
 		if(textFile !=  null)
-			
-			textLines = (textFile.text.Split('\n'));
+			textLines = textFile.text.Split('\n');
 
 		if(endAtLine == 0)
-			
 		{
 			endAtLine = textLines.Length - 1;
 		}
@@ -35,7 +32,10 @@ public class TextBoxManager : MonoBehaviour {
 	void Update()
 	{
 		if (textBox.activeSelf) {
-			theText.text = textLines [currentLine];
+			string[] line = textLines[currentLine].Split(new string[] { "::" }, System.StringSplitOptions.None);
+
+			textTitle.text = line[0];
+			theText.text = line[1];
 
 			if (Input.GetKeyDown (KeyCode.Return)) {
 				currentLine += 1;
