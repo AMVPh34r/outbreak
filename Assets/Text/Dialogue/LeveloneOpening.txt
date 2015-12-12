@@ -1,0 +1,3 @@
+Scientist::All hell is breaking loose!|The experiments are on a Rampage.
+Scientist::I'll be safe in the Panic room.
+[Tutorial]::Avoid being seen by enemies.||Use [WASD] or the arrow keys to move.|Use the mouse wheel to zoom in or out.

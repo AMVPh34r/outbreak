@@ -32,12 +32,10 @@ public class TextBoxManager : MonoBehaviour {
 		}
 	}
 
-
-
 	void Update()
 	{
 		if (textBox.activeSelf) {
-			string[] line = textLines[currentLine].Split(new string[] { "::" }, System.StringSplitOptions.None);
+			string[] line = parseLine(textLines[currentLine]);
 
 			textTitle.text = line[0];
 			theText.text = line[1];
@@ -52,5 +50,15 @@ public class TextBoxManager : MonoBehaviour {
 		}
 	}
 
-	
+	string[] parseLine(string line) {
+		string[] lineArr = line.Split(TextDelimiters.title, System.StringSplitOptions.None);
+		string title = lineArr [0];
+		string body = lineArr [1];
+
+		foreach (string delimiter in TextDelimiters.newline) {
+			body = body.Replace(delimiter, "\n");
+		}
+
+		return new string[] {title, body};
+	}
 }
