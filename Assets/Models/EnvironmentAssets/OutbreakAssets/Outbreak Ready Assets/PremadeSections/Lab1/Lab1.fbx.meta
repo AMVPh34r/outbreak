@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 91ff6e1ec5b4d4d80aa542371a876be0
+timeCreated: 1448348673
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cabinet
+    100002: DoorClosed.001
+    100004: Doorway
+    100006: Doorway.001
+    100008: Doorway.003
+    100010: HallwayWallStraight.001
+    100012: HallwayWallStraight.002
+    100014: HallwayWallStraight.003
+    100016: KeycardPanel.001
+    100018: //RootNode
+    100020: LaboratorySquareFloor
+    100022: LaboratoryWall
+    100024: LaboratoryWall.001
+    100026: LaboratoryWall.002
+    100028: LaboratoryWall.003
+    100030: LaboratoryWall.004
+    100032: LaboratoryWall.005
+    100034: LaboratoryWall.006
+    100036: LaboratoryWall.007
+    100038: LaboratoryWall.008
+    100040: LabTable
+    100042: LabTableWall.001
+    100044: LabTableWall.002
+    100046: LabTableWall.003
+    100048: Terminal1
+    100050: Terminal1.002
+    100052: Terminal1.003
+    400000: Cabinet
+    400002: DoorClosed.001
+    400004: Doorway
+    400006: Doorway.001
+    400008: Doorway.003
+    400010: HallwayWallStraight.001
+    400012: HallwayWallStraight.002
+    400014: HallwayWallStraight.003
+    400016: KeycardPanel.001
+    400018: //RootNode
+    400020: LaboratorySquareFloor
+    400022: LaboratoryWall
+    400024: LaboratoryWall.001
+    400026: LaboratoryWall.002
+    400028: LaboratoryWall.003
+    400030: LaboratoryWall.004
+    400032: LaboratoryWall.005
+    400034: LaboratoryWall.006
+    400036: LaboratoryWall.007
+    400038: LaboratoryWall.008
+    400040: LabTable
+    400042: LabTableWall.001
+    400044: LabTableWall.002
+    400046: LabTableWall.003
+    400048: Terminal1
+    400050: Terminal1.002
+    400052: Terminal1.003
+    2300000: Cabinet
+    2300002: DoorClosed.001
+    2300004: Doorway
+    2300006: Doorway.001
+    2300008: Doorway.003
+    2300010: HallwayWallStraight.001
+    2300012: HallwayWallStraight.002
+    2300014: HallwayWallStraight.003
+    2300016: KeycardPanel.001
+    2300018: LaboratorySquareFloor
+    2300020: LaboratoryWall
+    2300022: LaboratoryWall.001
+    2300024: LaboratoryWall.002
+    2300026: LaboratoryWall.003
+    2300028: LaboratoryWall.004
+    2300030: LaboratoryWall.005
+    2300032: LaboratoryWall.006
+    2300034: LaboratoryWall.007
+    2300036: LaboratoryWall.008
+    2300038: LabTable
+    2300040: LabTableWall.001
+    2300042: LabTableWall.002
+    2300044: LabTableWall.003
+    2300046: Terminal1
+    2300048: Terminal1.002
+    2300050: Terminal1.003
+    3300000: Cabinet
+    3300002: DoorClosed.001
+    3300004: Doorway
+    3300006: Doorway.001
+    3300008: Doorway.003
+    3300010: HallwayWallStraight.001
+    3300012: HallwayWallStraight.002
+    3300014: HallwayWallStraight.003
+    3300016: KeycardPanel.001
+    3300018: LaboratorySquareFloor
+    3300020: LaboratoryWall
+    3300022: LaboratoryWall.001
+    3300024: LaboratoryWall.002
+    3300026: LaboratoryWall.003
+    3300028: LaboratoryWall.004
+    3300030: LaboratoryWall.005
+    3300032: LaboratoryWall.006
+    3300034: LaboratoryWall.007
+    3300036: LaboratoryWall.008
+    3300038: LabTable
+    3300040: LabTableWall.001
+    3300042: LabTableWall.002
+    3300044: LabTableWall.003
+    3300046: Terminal1
+    3300048: Terminal1.002
+    3300050: Terminal1.003
+    4300000: Cabinet
+    4300002: LabTable
+    4300004: Terminal1
+    4300006: LaboratoryWall
+    4300008: LaboratorySquareFloor
+    4300010: Doorway
+    4300012: DoorClosed.001
+    4300014: KeycardPanel.001
+    4300016: Doorway.001
+    4300018: LaboratoryWall.001
+    4300020: LaboratoryWall.003
+    4300022: Doorway.003
+    4300024: LaboratoryWall.002
+    4300026: LaboratoryWall.004
+    4300028: LaboratoryWall.005
+    4300030: LaboratoryWall.006
+    4300032: LaboratoryWall.007
+    4300034: LaboratoryWall.008
+    4300036: LabTableWall.001
+    4300038: HallwayWallStraight.001
+    4300040: HallwayWallStraight.002
+    4300042: Terminal1.002
+    4300044: Terminal1.003
+    4300046: LabTableWall.002
+    4300048: HallwayWallStraight.003
+    4300050: LabTableWall.003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

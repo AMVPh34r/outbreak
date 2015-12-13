@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key
+  - New Tag
+  - Fire
+  - Fader
+  - Alarm
+  - AlarmLight
+  - MainLight
+  - Enemy
   layers:
   - Default
   - TransparentFX
