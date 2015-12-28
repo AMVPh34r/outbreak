@@ -22,13 +22,11 @@ public class TextBoxManager : MonoBehaviour {
 			textLines = textFile.text.Split ('\n');
 			textTitle = GameObject.Find ("Canvas/Fitter/Panel/Title").gameObject.GetComponent<Text>();
 			theText = GameObject.Find ("Canvas/Fitter/Panel/Text").gameObject.GetComponent<Text>();
+			if(endAtLine == 0) {
+				endAtLine = textLines.Length - 1;
+			}
 		} else {
 			textBox.SetActive (false);
-		}
-
-		if(endAtLine == 0)
-		{
-			endAtLine = textLines.Length - 1;
 		}
 	}
 
@@ -43,10 +41,10 @@ public class TextBoxManager : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Return)) {
 				currentLine += 1;
 			}
-		}
 
-		if (currentLine > endAtLine) {
-			textBox.SetActive (false);
+			if (currentLine > endAtLine) {
+				textBox.SetActive (false);
+			}
 		}
 	}
 
