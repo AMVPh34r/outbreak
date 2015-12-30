@@ -25,8 +25,10 @@ public class PlayerMovement : MonoBehaviour
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
 		bool sneak = Input.GetButton("Sneak");
-		
-		MovementManagement(h, v, sneak);
+
+		if (GlobalVars.controlsEnabled == true) {
+			MovementManagement (h, v, sneak);
+		}
 	}
 	
 	

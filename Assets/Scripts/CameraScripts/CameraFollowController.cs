@@ -8,8 +8,8 @@ public class CameraFollowController : MonoBehaviour {
 	public float maxFov = 76f;			// Maximum camera FOV
 	public float zoomSensitivity = 10f;	// Sensitivity of scroll wheel for zooming
 
-    private Vector3 offset;         // Initial camera offset
-	private float fovTarget;
+    private Vector3 offset;         	// Initial camera offset
+	private float fovTarget;			// Target FOV when zooming the camera
 
     void Start() {
         this.offset = transform.position - target.position;
@@ -23,6 +23,8 @@ public class CameraFollowController : MonoBehaviour {
 		fovTarget = Camera.main.fieldOfView + Input.GetAxis("Mouse ScrollWheel") * zoomSensitivity;
 		fovTarget = Mathf.Clamp(fovTarget, minFov, maxFov);
 
-		Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, fovTarget, Time.deltaTime);
+		if (GlobalVars.controlsEnabled == true) {
+			Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, fovTarget, Time.deltaTime);
+		}
     }
 }
