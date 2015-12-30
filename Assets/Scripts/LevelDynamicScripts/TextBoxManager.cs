@@ -26,6 +26,7 @@ public class TextBoxManager : MonoBehaviour {
 				endAtLine = textLines.Length - 1;
 			}
 			GlobalVars.controlsEnabled = false;
+			GlobalVars.aiEnabled = false;
 		} else {
 			textBox.SetActive (false);
 		}
@@ -46,6 +47,7 @@ public class TextBoxManager : MonoBehaviour {
 			if (currentLine > endAtLine) {
 				textBox.SetActive (false);
 				GlobalVars.controlsEnabled = true;
+				GlobalVars.aiEnabled = true;
 			}
 		}
 	}
